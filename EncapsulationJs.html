@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    class Student
+    {
+        constructor()
+        {
+            var name;
+            var marks;
+        }
+
+        getName()
+        {
+            return this.name;
+        }
+
+        setName(name)
+        {
+            return this.name = name;
+        }
+
+        getMarks()
+        {
+            return this.marks;
+
+        }
+
+        setMarks(marks)
+        {
+            return this.marks = marks;
+        }    
+    }
+
+    var stud = new Student();
+
+    stud.setName("Yash");
+    stud.setMarks(100);
+
+    document.writeln(stud.getName() + " " + stud.getMarks());
+
+
+</script>
+
+</html>
