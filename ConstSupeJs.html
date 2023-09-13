@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+<!-- The super keyword is used to call the parent class constructor. -->
+
+    <script>
+        class CompName
+        {
+            constructor()
+            {
+                this.company = "Royal";
+            }
+        }
+
+        class Employee extends CompName
+        {
+            constructor(id,name)
+            {
+                super();
+                this.id = id;
+                this.name = name;
+            }
+        }
+
+        var emp = new Employee(1,"Yash");
+
+        document.write(emp.id + " " + emp.name + " " + emp.company);
+    </script>
+
+</body>
+</html>

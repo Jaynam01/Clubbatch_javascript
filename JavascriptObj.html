@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+    1 . by object literal
+
+    object = {property1:value1 , prop2:val2 , .........}
+
+
+    2. by creating object directly 
+
+    var objnam = new Object();2
+
+    3 . by using constructor 
+
+ -->
+    
+
+</body>
+
+<script>
+
+    emp = {id:101, name:"yash", salary:100000}
+
+    document.write(emp.id + " " + emp.name + " " + emp.salary + "<br>")
+
+
+    var emp2 = new Object();
+
+    emp2.id = 102;
+    emp2.name = "ayush";
+    emp2.salary = 50000;
+
+    document.write(emp2.id + " " + emp2.name + " " + emp2.salary + "<br>")
+
+    function emp3(id,name,salary)
+    {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    e = new emp3(103,"dev",10000);
+
+    document.write(e.id + " " + e.name + " " + e.salary)
+
+
+</script>
+</html>

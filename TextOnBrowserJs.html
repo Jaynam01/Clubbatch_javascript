@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+        This is first             div
+        <b>Inside B tag</b>
+    </div>
+</body>
+<script>
+    let x = document.getElementById('d1')
+
+    console.log(x.innerHTML) 
+    document.write("<br>" + x.innerHTML)    
+
+
+    // get all contents including space and other html elemet / tag
+    console.log(x.innerText)
+    document.write("<br>" + x.innerText)    
+
+    // get all content but no space  no other html element / tag
+    console.log(x.textContent)
+    document.write("<br>" + x.textContent)    
+
+    // / get all content including space but no html element / tag
+
+</script>
+</html>

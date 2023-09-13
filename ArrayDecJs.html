@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+// three ways to declare array in js :
+
+// 1 by array literal
+
+// var arrayname = [v1,v2,v3.......];
+
+// 2 by creating instance of array (new keyword)
+
+// var arrayname = new Array();
+
+// 3 by array constructor
+
+// Array("val1","val2","val3")
+
+
+
+var emp = ["Jaynam","Dev","Yash"];
+
+for(i=0;i<emp.length;i++)
+{
+    document.write(emp[i] + "<br>")
+}
+
+document.write("<br>")
+
+
+
+var i;
+var emp2 = new Array();
+
+emp2[0] = "Dev"
+emp2[1] = "Jaynam"
+emp2[2] = "Yash"
+
+for(i=0;i<emp2.length;i++)
+{
+    document.write(emp2[i] + "<br>")
+}
+
+document.write("<br>")
+
+
+
+var emp3 = new Array("Yash" , "Jaynam", "Dev");
+
+for(i=0;i<emp3.length;i++)
+{
+    document.write(emp3[i] + "<br>")
+}
+
+
+
+</script>
+</html>

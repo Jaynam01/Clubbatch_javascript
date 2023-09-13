@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form name="f">
+        <table>
+
+            <tr>
+                <td>
+                    <input type="checkbox" name="h" value="mu"> Music <br>
+                    <input type="checkbox" name="h" value="da"> Dance <br>
+                    <input type="checkbox" name="h" value="sp"> Sports <br>
+                    <input type="checkbox" name="h" value="si"> Singing <br>
+                    <input type="checkbox" name="h" value="re"> Reading <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" onclick="hby()" value="Hobbies">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p id="hby"></p>
+</body>
+<script>
+
+    function hby()
+    {
+        let ch = ""
+        let val = ""
+
+        for(let i=0;i<document.f.h.length;i++)
+        {
+            if(document.f.h[i].checked)
+            {
+                ch = document.f.h[i].value
+                console.log(ch)
+
+                if(ch == 'mu')
+                {
+                    val = val + "Music" + " "
+                    document.getElementById('hby').innerHTML = val
+                }
+                
+                if(ch == 'da')
+                {
+                    val = val + "Dance" + " "
+                    document.getElementById('hby').innerHTML = val
+                }
+                
+                if(ch == 'sp')
+                {
+                    val = val + "Sports" + " "
+                    document.getElementById('hby').innerHTML = val
+                }
+
+                
+                if(ch == 'si')
+                {
+                    val = val + "Singing" + " "
+                    document.getElementById('hby').innerHTML = val
+                }
+
+                
+                if(ch == 're')
+                {
+                    val = val + "Reading " + " "
+                    document.getElementById('hby').innerHTML = val
+                }
+
+            }
+        }
+    }
+
+</script>
+</html>

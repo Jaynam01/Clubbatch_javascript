@@ -1,0 +1,58 @@
+<!-- 
+            operators in javascript : 
+
+        ------------------------------------
+
+
+        -> arithmetic operators 
+
+        + addition  
+        - substraction
+        * multiplication
+        % modulus(remainder)
+        / division
+        ++ increment     
+        -- decrement 
+
+        -> comparison(realation) operators
+
+        ==  is equal to
+        === indentical (equal and of same typr)        
+        !=  not equal to 
+        !== not indentical
+        >   greater than
+        >=  greater than or equal to
+        <=  less than or equal to 
+        <   less than
+
+
+        -> bitwise operators
+
+        &   Bitwise AND	
+        |   Bitwise OR
+        ^   Bitwise XOR	
+        ~   Bitwise NOT
+        <<  Bitwise Left shift	
+        >>  Bitwise right shift
+        >>> Bitwise right shift with zero
+
+
+        -> logical operators
+
+            &&  Logical AND
+            ||  Logical OR
+            !   Logical NOT
+
+
+        -> assignment operators  
+        
+            =   Assign
+            +=  Add and Assign
+            -=  Substract and Assign
+            *=  Multiply and Assign
+            /=  Divide and Assign
+            %=  Modulus and Assign
+
+    
+        
+ -->

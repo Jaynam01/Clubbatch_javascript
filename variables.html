@@ -1,0 +1,64 @@
+<!-- 
+
+    there are two types of variables in javascript : 
+
+    local variable
+
+    global variable
+
+
+    some rules : 
+
+    1 . name must start with a letter (a to z , A to Z), underscore(_) , dollarsign($)
+
+    2. after first letter we can digits (0 to 9) 
+
+        ex. : _value10  valid
+              10value_    not valid
+
+            
+    3.  variables are case sensitive , for ex. : x & X are different variables. 
+    
+ -->
+
+    <!-- example of variable -->
+
+ <script>
+    var x = 10;
+    var y = 20;
+
+    var z = x + y;
+
+    document.write(z + "<br>");
+ </script>
+
+
+<!-- example of local variable -->
+
+<script>
+    function abc()
+    {
+        var x = 10;     // local variable 
+    }
+</script>
+
+<!-- example of global variable -->
+
+<script>
+    var data = 200; //global variable
+
+    function a()
+    {
+        document.write(data + "<br>");
+    }
+
+    function b()
+    {
+        document.write(data);
+    }
+
+    // calling of function
+
+    a();
+    b();
+</script>

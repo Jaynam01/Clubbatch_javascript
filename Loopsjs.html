@@ -1,0 +1,111 @@
+<!-- 
+
+    there are four types of loops in js :
+
+    1 for loop
+
+    for(intialization;condition;inc/dec)
+    {
+        // code to be executed
+    }
+
+
+    2 while loop
+
+    initialization;
+    while(condition)
+    {
+        //code to be executed
+        inc/dec;
+    }
+
+    3 do...while loop
+
+    do
+    {
+        // code to be executed
+        inc/dec;
+    }
+    while(condition);
+
+    4 for-in loop
+
+    -> this loop is used to iterate the properties of an object.
+        disuss it later.
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    for loop example : 
+    <br><br>
+    
+    <script>
+
+        for(i=1;i<=5;i++)
+        {
+            document.write(i + "<br>")
+        }
+
+    </script>
+
+<!-- 
+    loop iteration wise : 
+
+    i++ - increment - i = i + 1
+    i-- - decrement - i = i - 1
+
+    i   condition   printing i++    
+
+    1   1<=5(T)     1         2   
+    2   2<=5(T)     2         3
+    3   3<=5(T)     3         4
+    4   4<=5(T)     4         5
+    5   5<=5(T)     5         6
+    6   6<=5(F)   
+
+
+
+
+ -->
+
+
+
+while loop example : 
+<br><br>
+
+<script>
+
+    var i = 1;
+
+    while(i<=15)
+    {
+        document.write(i + "<br>")
+        i++;
+    }
+</script>
+<br><br>
+
+do while loop :
+<br><br>
+<script>
+
+    var i = 21;
+
+    do
+    {
+        document.write(i + "<br>");
+        i++;
+    }
+    while(i<=25);
+
+</script>
+    
+
+</body>
+</html>

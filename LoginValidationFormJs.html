@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="f">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="un"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pwd"></td>
+            </tr> 
+            <tr>
+                <td colspan="2" align="center"><input type="button" value="Login" onclick="validate()"></td>
+
+            </tr>
+        </table>
+    </form>
+    <script>
+        function validate()
+        {
+            let uname = document.f.un.value
+            let pwd = document.f.pwd.value
+
+            isError = false;
+
+            error = ""
+
+            if(uname== "" || uname.trim().length == 0)
+            {
+                isError = true;
+
+                error = error + "Uname Is Required!! .\n"
+            }
+
+            if(pwd == "" || pwd.trim().length == 0)
+            {
+                isError = true;
+
+                error += "Password Is Required!! .\n"
+            }
+
+            if(isError)
+            {
+                alert(error)
+            }
+        
+        }
+    </script>
+</body>
+</html>

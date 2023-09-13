@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onmouseover="mouseOver()">Mouse Over</button>
+    <button onmouseout="mouseOut()">Mouse Out</button>
+    <button onmouseenter="mouseEnter()">Mouse Enter</button>
+    <button onmouseup="mouseUp()">Mouse Up</button>
+    <button onmousedown="mouseDown()">Mouse Down</button>
+
+</body>
+
+<script>
+     function mouseOver(){
+        document.body.style.backgroundColor = "indianred"
+    }
+
+    function mouseOut(){
+        document.body.bgColor = "black"
+    }
+    function mouseEnter(){
+        document.body.style.backgroundColor = "orange"
+    }
+
+    function mouseUp(){
+        document.body.style.backgroundColor = "teal"
+    }
+
+    function mouseDown(){
+        document.body.style.backgroundColor = "navy"
+    }
+</script>
+</html>

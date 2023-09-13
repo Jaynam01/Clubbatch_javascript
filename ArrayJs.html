@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <form name="f">
+        <table>
+            <tr>
+                <td>Enter a value : </td>
+                <td><input type="text" name="v1"></td>
+            </tr>
+
+            <tr>
+                <input type="button" value="Push" onclick="arrPush()">
+                <input type="button" value="Pop" onclick="arrPop()">
+            </tr>
+        </table>
+    </form>
+    
+    <p id="prnt"></p>
+
+    <script>
+        
+        // let a = [10,20,2.5,"royal",true]
+        // console.log(a)
+
+        // document.write(a + "<br>")
+
+        // for(let i=0;i<a.length;i++)
+        // {
+        //     document.write(a[i] + "<br>")
+        // }
+
+
+        let arr = []
+
+        // push : to insert values to last index of an array
+
+        // pop : to remove elements from end of array
+
+        // console.log(arr)
+
+        // arr.push(30)
+        // arr.push(40)
+        // arr.push(50)
+
+        // console.log(arr)
+
+        // document.write(arr)
+
+        // arr.pop()
+        // arr.pop()
+
+        // document.write("<br>" + arr)
+
+
+        function arrPush()
+        {
+            let val = document.f.v1.value
+            console.log(val)
+
+            arr.push(val)
+            arrPrnt()
+        }
+
+        function arrPop()
+        {
+            arr.pop()
+            arrPrnt()
+        }
+
+        function arrPrnt()
+        {
+            document.getElementById('prnt').innerHTML = arr
+        }
+
+    </script>
+
+</body>
+</html>

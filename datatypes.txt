@@ -1,0 +1,31 @@
+<!-- 
+        datatypes in javascript :
+
+        there are two types of datatypes in javascript : 
+
+        1. primitive datatype 
+
+        datatype                    description
+
+        string                      represents sequence of char  eg.agnivesh
+
+        number                      represents numeric value    e.g. 1000
+
+        boolean                     represents boolean value either true or false
+
+        undefined                   represents undefined value
+
+        null                        represents null     i.e. no value at all
+
+
+        2. non-primitive datatype 
+
+        datatype                    description       
+
+        object                      represent instance through which we can access members 
+
+        array                       represent group of similar values
+
+        regex                       represents regular expression
+
+ -->

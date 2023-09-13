@@ -1,0 +1,51 @@
+<!-- 
+
+    Document Object Model (DOM)
+
+    The document object represents the whole html document.
+
+    window.document  
+
+    or document. ...
+    
+    write("string")	 : writes the given string on the doucment.
+    writeln("string") : writes the given string on the doucment with newline character at the end.
+    getElementById() :	returns the element having the given id value.
+    getElementsByName() :	returns all the elements having the given name value.
+    getElementsByTagName() : 	returns all the elements having the given tag name.
+    getElementsByClassName() :	returns all the elements having the given class name.
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        document.write("Hello Dev !!");
+
+        document.write("<br>" + "Hello herry!!! Kese ho herry bhai!!");
+
+        // document.writeln("hello agni !!");
+
+        function printvalue()
+        {  
+            var name=document.form1.name.value;  
+            alert("Welcome: "+name);  
+        }  
+
+    
+    </script>
+
+    <form action="" name="form1">
+        Enter Name : <input type="text" name="name">
+
+        <input type="button" onclick="printvalue()" value="Print Value">
+    </form>
+
+</body>
+</html>

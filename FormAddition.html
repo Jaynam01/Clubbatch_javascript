@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" name="f">
+        Enter Number 1 : <input type="text" name="v1"> <br>
+        Enter Number 2 : <input type="text" name="v2"><br>
+
+        <input type="button" value="Addition" onclick="add()">
+    </form>
+
+    <p id="ans">
+        Answer
+    </p>
+
+    <script>
+        function add()
+        {
+            let a = parseInt(document.f.v1.value)
+            let b = parseInt(document.f.v2.value)
+        
+            console.log("a : "+ a + "b :"+b)
+
+            let c = a + b
+
+            let x = document.getElementById('ans')
+
+            // display 
+
+            x.innerHTML = c
+
+            // innerHTMl
+            // innerText
+            // textContent
+        
+        }
+    </script>
+    
+</body>
+</html>

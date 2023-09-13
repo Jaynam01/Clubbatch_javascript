@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+
+</body>
+
+<script>
+
+    let name = "jonny jonyy yes papa"
+
+    document.write(name.length)
+    document.write("<br>" + typeof name)
+    document.write("<br>" + name[6])
+    document.write("<br>" + name.slice(3,8))
+
+    // from 3rd index to 7th index : 8th index will be omitted 
+
+    document.write("<br>" + name.slice(5))
+
+    // from 5th index to last index
+
+    document.write("<br>" + name.slice(-6))
+
+    // last 6 characters
+
+    document.write("<br>" + name.toUpperCase())
+
+    document.write("<br>" + name.toLowerCase())
+
+    let s = "   ROYAL   "
+
+    document.write("<br>" + s.length)
+
+    document.write("<br>" + s.trim().length + "<br>")
+
+    let s2 = "Tech Soft"
+
+    document.write(s.concat(s2 + "<br>"))
+    document.write(s.concat(s2,name + "<br>"))
+    document.write(s.concat(s2,name,s + "<br>"))
+
+    // let name = "jonny jonyy yes papa"
+
+    document.write(name.indexOf("j"))
+    // return index of j 
+
+    document.write("<br>" + name.indexOf("yes"))
+    //return index of y
+
+    document.write("<br>" + name.indexOf("yess"))
+    // return -1 if matches not found!!
+
+
+    document.write("<br>" + name.startsWith('j')) // true
+
+    document.write("<br>" + name.startsWith('jo')) // true
+
+    document.write("<br>" + name.startsWith('jony')) // false
+
+    document.write("<br>" + name.endsWith('a')) // true
+
+    document.write("<br>" + name.endsWith('papa')) // true
+
+    document.write("<br>" + name.endsWith('paapa')) // false
+
+    // let name = "jonny jonyy yes papa"
+
+    document.write("<br>" + name.charAt(8))
+
+    document.write("<br>" + name.search("papa")) 
+
+    // return index of p 
+
+    document.write("<br>" + name.search("paapa"))
+    //return -1 if matches not found
+
+    document.write("<br>" + name.includes('yes')) // true
+
+    document.write("<br>" + name.includes('yess')) // false
+
+
+
+</script>
+
+</html>

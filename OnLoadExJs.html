@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function colors()
+        {
+            document.body.style.backgroundColor = "gold"
+
+            setTimeout(red,2000)
+
+            // function , 2sec 
+            // 2000ms - 2sec
+        }
+
+        function red()
+        {
+            document.body.style.backgroundColor = "indianred"
+            setTimeout(green,2000)
+
+        }
+
+        function green(){
+            document.body.style.backgroundColor = "green"
+            setTimeout(teal,2000)
+
+
+        }
+        function teal(){
+            document.body.style.backgroundColor = "teal"
+            setTimeout(colors,2000)
+        }
+    </script>
+</head>
+<body onload="colors()">
+    
+</body>
+</html>

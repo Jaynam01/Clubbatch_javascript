@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    
+    // class syntax : 
+
+    // two components : class declarations & class expressions
+
+class Employee
+{
+    constructor(id,name)
+    {
+        this.id = id;
+        this.name = name;
+    }
+
+    detail()
+    {
+        document.write(this.id + " " + this.name + "<br>")
+    }
+}
+
+var e1 = new Employee(101 , "Jaynam");
+var e2 = new Employee(102 , "Yash");
+
+e1.detail();
+e2.detail();
+
+</script>
+
+</html>
