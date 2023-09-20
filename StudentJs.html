@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Enter Details For Student : </h2>
+
+    <form action="" id="stuForm">
+
+        <label for="">Name : </label>
+        <input type="text" id="name"> <br><br>
+
+        <label for="">Standard : </label>
+        <input type="text" id="standard"> <br><br>
+
+        <label for="">Roll No : </label>
+        <input type="text" id="rollno"> <br><br>
+
+        <label for="">Division : </label>
+        <input type="text" id="division"> <br><br>
+
+ 
+        <button type="button" onclick="studdetai()">Submit</button>
+
+
+    </form>
+
+    <div id="disInfo"></div>
+
+</body>
+
+<script>
+
+    class Student
+    {
+        constructor(name,standard)
+        {
+            this.name = name;
+            this.standard = standard; 
+        }
+    }
+
+    class StudentDetails extends Student
+    {
+        constructor(name,standard,rollno,division)
+        {
+            super(name,standard);
+
+            this.rollno = rollno;
+            this.division = division;
+        }
+
+        displayDetails()
+        {
+           
+        }
+    }
+
+    function studdetai()
+    {
+        let name = document.getElementById('name').value;
+        let standard = document.getElementById('standard').value;
+        let rollno = document.getElementById('rollno').value;
+        let division = document.getElementById('division').value;
+
+
+        var student = new StudentDetails(name,standard,rollno,division);
+        
+        
+
+    }
+
+</script>
+</html>
