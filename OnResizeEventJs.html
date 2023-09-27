@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body onresize="fu()">
+    
+    <p id="para"></p>
+
+    <p>You Have Resized The Window <span id="s1">0</span> times.
+    </p>
+
+</body>
+
+<script>
+
+    var i=0;
+
+    function fu()
+    
+    {
+        var res = "Width = " + window.outerWidth + "<br>" + "Height = " + window.outerHeight;
+        document.getElementById('para').innerHTML = res;
+
+        var res1 =  i+=1;
+        
+        document.getElementById('s1').innerHTML = res1;
+    }
+
+</script>
+
+</html>
