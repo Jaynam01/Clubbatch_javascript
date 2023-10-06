@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Example Of Event Listner Method</p>
+
+    <button id="btn">
+        Click Me
+    </button>
+
+    <p id="para">
+
+    </p>
+
+</body>
+
+<script>
+    
+    document.getElementById('btn').addEventListener("click",fun)
+
+    function fun()
+    {
+        document.getElementById('para').innerHTML = "Button Clicked !";
+    }
+
+</script>
+
+
+</html>
